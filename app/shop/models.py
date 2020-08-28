@@ -3,7 +3,7 @@ from django.db import models
 
 class Product(models.Model):
     name = models.CharField('상품명', max_length=100)
-    tag = models.ManyToManyField('Tag', max_length=100, blank=True)
+    tag_set = models.ManyToManyField('Tag', max_length=100, blank=True)
 
     def __str__(self):
         return self.name
