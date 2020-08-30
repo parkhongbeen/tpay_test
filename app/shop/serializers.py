@@ -9,7 +9,7 @@ class ProductOptionSerializer(serializers.ModelSerializer):
         model = ProductOption
         fields = (
             'pk',
-            'option',
+            'name',
             'price',
         )
 
@@ -24,16 +24,14 @@ class TagSerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(WritableNestedModelSerializer):
-    # Reverse FK relation
-    option = ProductOptionSerializer(many=True)
-    # Direct FK relation
-    tag = TagSerializer(many=True)
+    option_set = ProductOptionSerializer(many=True)
+    tag_set = TagSerializer(many=True)
 
     class Meta:
         model = Product
-        fields = (
+        fields = [
             'pk',
             'name',
-            'tag',
-            'option'
-        )
+            'option_set',
+            'tag_set',
+        ]

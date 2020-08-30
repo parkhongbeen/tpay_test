@@ -10,14 +10,14 @@ class Product(models.Model):
 
 
 class ProductOption(models.Model):
-    option = models.CharField('상품 옵션', max_length=100)
+    name = models.CharField('옵션명', max_length=100)
     price = models.PositiveIntegerField('가격')
     product = models.ForeignKey(Product, verbose_name='상품',
                                 on_delete=models.CASCADE,
-                                related_name='option')
+                                related_name='option_set')
 
     def __str__(self):
-        return self.option
+        return self.name
 
 
 class Tag(models.Model):
