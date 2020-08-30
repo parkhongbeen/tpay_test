@@ -1,8 +1,7 @@
-from django.shortcuts import get_object_or_404
 from rest_framework import viewsets
 from rest_framework.response import Response
 
-from shop.models import Product, Tag
+from shop.models import Product
 from shop.serializers import ProductSerializer
 
 
@@ -25,4 +24,3 @@ class ProductViewSet(viewsets.ModelViewSet):
         if serializer.is_valid(raise_exception=True):
             serializer.save()
         return Response(serializer.data)
-
