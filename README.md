@@ -31,7 +31,4 @@ $docker run -it -p 8000:8000 --volume tpay_test --name tpaycontainer tpay
 ### API 테스트, Postman Export결과
 - Postman Export파일: Tpay Test.postman_collection.json
 - Postman URL: Postman URL
-- DRF_yasg: http://127.0.0.1:8000/doc/ (접속 예시 화면)
-
-
-$python manage.py runserver
+- DRF_yasg: http://127.0.0.1:8000/doc/
