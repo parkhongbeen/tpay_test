@@ -21,12 +21,12 @@ from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Snippets API",  # Required. API title.
-        default_version='v1',  # Required. API version string
-        description="TpayTest description",  # API description; markdown supported
+        title="Snippets API",
+        default_version='v1',
+        description="TpayTest description",
     ),
-    public=True,  # if False, includes only the endpoints that are accesible by the user viewing the schema
-    permission_classes=(permissions.AllowAny,),  # permission classes for the schema view itself
+    public=True,
+    permission_classes=(permissions.AllowAny,),
 )
 
 urlpatterns = [
