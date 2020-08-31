@@ -4,8 +4,9 @@ source =
 
 omit =
     app/manage.py
-    app/config/wsgi/*
+    app/config/*
     app/shop/admin
+    app/*/migrations/*
 
 [report]
 exclude_lines =
