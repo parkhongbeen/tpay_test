@@ -1,3 +1,6 @@
 from django.test import TestCase
 
-# Create your tests here.
+
+class ShopTest(TestCase):
+    def test_product_list(self):
+        response = self.client.get('/product/')
