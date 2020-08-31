@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/gh/parkhongbeen/tpay_test/branch/master/graph/badge.svg)](https://codecov.io/gh/parkhongbeen/tpay_test) / testcode미작성
 ## Tpay 코딩테스트
 **tpay 코딩테스트를 위한 repository입니다.**
 
