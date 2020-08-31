@@ -5,3 +5,8 @@ source =
 omit =
     app/manage.py
     app/config/wsgi/*
+    app/shop/admin
+
+[report]
+exclude_lines =
+    def __str__
