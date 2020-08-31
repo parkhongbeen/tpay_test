@@ -4,3 +4,4 @@ source =
 
 omit =
     app/manage.py
+    app/config/wsgi/*
